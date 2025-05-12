@@ -3,6 +3,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const busesRouter = require('./routes/buses');
+const scheduleRouter = require('./routes/schedule');
 
 const app = express();
 app.use(cors());
@@ -10,6 +11,7 @@ app.use(express.json());
 
 // Routes
 app.use('/buses', busesRouter);
+app.use('/schedule', scheduleRouter);
 
 // Root
 app.get('/', (req, res) => {
