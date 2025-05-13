@@ -1,0 +1,85 @@
+[
+  {
+    "operator": {
+      "name": "Sri Lanka Transport Board",
+      "contact_info": "011-2581123",
+      "type": "CTB"
+    },
+    "bus": {
+      "bus_number": "NA-1234",
+      "name": "Colombo Express",
+      "type": "Express",
+      "fare": 350
+    },
+    "route": {
+      "name": "Colombo to Kandy",
+      "source_stop": { "name": "Colombo Fort", "city": "Colombo", "location": "POINT(79.8578 6.9344)" },
+      "destination_stop": { "name": "Kandy Clock Tower", "city": "Kandy", "location": "POINT(80.6385 7.2906)" },
+      "total_distance": 115,
+      "total_duration": 180,
+      "stops": [
+        { "name": "Pilimathalawa", "city": "Kandy", "location": "POINT(80.5672 7.2472)", "sequence": 2 },
+        { "name": "Kadugannawa", "city": "Kandy", "location": "POINT(80.5186 7.2542)", "sequence": 3 }
+      ]
+    },
+    "schedule": {
+      "valid_from": "2025-05-15",
+      "valid_until": null,
+      "journeys": [
+        {
+          "departure_time": "06:00:00",
+          "arrival_time": "09:00:00",
+          "days_of_week": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+          "stop_times": [
+            { "stop_name": "Colombo Fort", "arrival_time": null, "departure_time": "06:00:00" },
+            { "stop_name": "Pilimathalawa", "arrival_time": "08:00:00", "departure_time": "08:05:00" },
+            { "stop_name": "Kadugannawa", "arrival_time": "08:20:00", "departure_time": "08:25:00" },
+            { "stop_name": "Kandy Clock Tower", "arrival_time": "09:00:00", "departure_time": null }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "operator": {
+      "name": "Private Bus Association",
+      "contact_info": "077-1234567",
+      "type": "Private"
+    },
+    "bus": {
+      "bus_number": "WP-5678",
+      "name": "Galle Super",
+      "type": "AC",
+      "fare": 500
+    },
+    "route": {
+      "name": "Colombo to Galle",
+      "source_stop": { "name": "Colombo Fort", "city": "Colombo", "location": "POINT(79.8578 6.9344)" },
+      "destination_stop": { "name": "Galle Bus Stand", "city": "Galle", "location": "POINT(80.2170 6.0367)" },
+      "total_distance": 120,
+      "total_duration": 150,
+      "stops": [
+        { "name": "Panadura", "city": "Kalutara", "location": "POINT(79.9022 6.7136)", "sequence": 2 },
+        { "name": "Ambalangoda", "city": "Galle", "location": "POINT(80.0552 6.2359)", "sequence": 3 }
+      ]
+    },
+    "schedule": {
+      "valid_from": "2025-05-15",
+      "valid_until": null,
+      "journeys": [
+        {
+          "departure_time": "07:30:00",
+          "arrival_time": "10:00:00",
+          "days_of_week": ["Mon", "Wed", "Fri"],
+          "stop_times": [
+            { "stop_name": "Colombo Fort", "arrival_time": null, "departure_time": "07:30:00" },
+            { "stop_name": "Panadura", "arrival_time": "08:10:00", "departure_time": "08:15:00" },
+            { "stop_name": "Ambalangoda", "arrival_time": "09:20:00", "departure_time": "09:25:00" },
+            { "stop_name": "Galle Bus Stand", "arrival_time": "10:00:00", "departure_time": null }
+          ]
+        }
+      ]
+    }
+  }
+  
+]
