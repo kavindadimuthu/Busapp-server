@@ -21,4 +21,4 @@ node_modules
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw?"node_modules/" 
