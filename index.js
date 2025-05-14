@@ -8,6 +8,7 @@ const operatorsRouter = require('./routes/operators');
 const stopsRouter = require('./routes/stops');
 const routesRouter = require('./routes/routes');
 const routeStopsRouter = require('./routes/routeStops')
+const journeyRouter = require('./routes/journey')
 
 
 const app = express();
@@ -27,6 +28,7 @@ app.use('/operators', operatorsRouter);
 app.use('/stops', stopsRouter);
 app.use('/routes', routesRouter);
 app.use('/routeStops', routeStopsRouter);
+app.use('/journey', journeyRouter);
 
 // Root
 app.get('/', (req, res) => {
