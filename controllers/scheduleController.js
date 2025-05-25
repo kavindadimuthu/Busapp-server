@@ -239,6 +239,7 @@ exports.getAllSchedules = async (req, res) => {
             (
                 SELECT json_agg(json_build_object(
                     'id', s2.id,
+                    'route_stop_id', rs.id,
                     'name', s2.name,
                     'city', s2.city,
                     'location', ST_AsText(s2.location),

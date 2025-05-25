@@ -7,5 +7,7 @@ const busController = require('../controllers/busController');
 // router.post('/', busController.createBus);
 // router.put('/:id', busController.updateBus);
 // router.delete('/:id', busController.deleteBus);
+// Get all bus types
+router.get('/types', busController.getAllBusTypes);
 
 module.exports = router;

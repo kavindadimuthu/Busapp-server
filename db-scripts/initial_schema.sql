@@ -2,7 +2,7 @@
 CREATE TABLE operators (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     type TEXT NOT NULL CHECK (type IN ('Private', 'CTB')), -- Type of operator
-    name TEXT NOT NULL, -- Operator's name
+    name TEXT NOT NULL, -- Operator's name (If CTB, it should be depot name)')
     contact_info TEXT -- Optional contact details
 );
 

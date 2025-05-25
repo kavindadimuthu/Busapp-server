@@ -5,6 +5,7 @@ const db = require('../db');
  * Expects an array of schedule objects in req.body.
  */
 exports.bulkCreateSchedules = async (req, res) => {
+    console.log('Bulk create schedules request body:', req.body);
     const schedules = Array.isArray(req.body) ? req.body : [req.body];
     const client = await db.connect();
     try {

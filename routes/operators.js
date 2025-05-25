@@ -7,5 +7,7 @@ const operatorController = require('../controllers/operatorController');
 // router.post('/', operatorController.createOperator);
 // router.put('/:id', operatorController.updateOperator);
 // router.delete('/:id', operatorController.deleteOperator);
+// Get all operator types
+router.get('/types', operatorController.getAllOperatorTypes);
 
 module.exports = router;
